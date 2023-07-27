@@ -78,7 +78,7 @@ p {
 }
 
 #bigpicture {
-    background-image: url(../Images/hatthrow.jpg);
+    background-image: url('../Images/hatthrow.jpg');
     height: 90vh;
     width:100%;
     background-size: cover;

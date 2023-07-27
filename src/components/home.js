@@ -1,30 +1,16 @@
 import React from 'react'
 import "./style/home.css";
-import Navbar from './Navbar';
+import {Link} from "react-router-dom";
 export default function home() {
     return (
         <div>
-            {/* <section id="header">
-                <a href=""><img src="Images/logo.png" className="logo" /></a>
-                <div>
-                    <ul id="navbar">
-                        <li><a href="search.html"><i className="fas fa-search" aria-hidden="true"></i></a></li>
-                        <li><a className="active" href="Home.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="cart.html"><i className="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
-                        <li><a href="login.html"><i className="fa fa-sign-in" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </section> */}
-            <Navbar/>
+            {/* <Navbar/> */}
             <section id="bigpicture">
                 <h4>Special-Offer</h4>
                 <h2>Super Value deals</h2>
                 <h1>For Students</h1>
                 <p>Save more with Us </p>
-                <button><a href="shop.html"> Shop Now</a></button>
+                <button><Link to="/shop"> Shop Now</Link></button>
             </section>
             <h2 id="feat">Features</h2>
             <section id="features" >
@@ -67,7 +53,7 @@ export default function home() {
                             </div>
                             <h4>₹1200</h4>
                         </div>
-                        <a href="cart.html"><i className="fal fa-shopping-cart cart"></i></a>
+                        <Link to="cart.html"><i className="fal fa-shopping-cart cart"></i></Link>
                     </div>
                     <div className="pro">
                         <img src="Images/kettle.jpg" alt="calci" />
@@ -83,7 +69,7 @@ export default function home() {
                             </div>
                             <h4>₹1300</h4>
                         </div>
-                        <a href="cart.html"><i className="fal fa-shopping-cart cart"></i></a>
+                        <Link to="cart.html"><i className="fal fa-shopping-cart cart"></i></Link>
                     </div>
                     <div className="pro">
                         <img src="Images/laptop.jpg" alt="calci" />
@@ -99,7 +85,7 @@ export default function home() {
                             </div>
                             <h4>₹15,000</h4>
                         </div>
-                        <a href="cart.html"><i className="fal fa-shopping-cart cart"></i></a>
+                        <Link to="cart.html"><i className="fal fa-shopping-cart cart"></i></Link>
                     </div>
                     <div className="pro">
                         <img src="Images/headphones.jpg" alt="calci" />
@@ -115,7 +101,7 @@ export default function home() {
                             </div>
                             <h4>₹1000</h4>
                         </div>
-                        <a href="cart.html"><i className="fal fa-shopping-cart cart"></i></a>
+                        <Link to="cart.html"><i className="fal fa-shopping-cart cart"></i></Link>
                     </div>
 
                 </div>
@@ -134,7 +120,7 @@ export default function home() {
                             </div>
                             <h4>₹300</h4>
                         </div>
-                        <a href="cart.html"><i className="fal fa-shopping-cart cart"></i></a>
+                        <Link to="cart.html"><i className="fal fa-shopping-cart cart"></i></Link>
                     </div>
                     <div className="pro">
                         <img src="Images/mech.png" alt="calci" />
@@ -150,7 +136,7 @@ export default function home() {
                             </div>
                             <h4>₹600</h4>
                         </div>
-                        <a href="cart.html"><i className="fal fa-shopping-cart cart"></i></a>
+                        <Link to="cart.html"><i className="fal fa-shopping-cart cart"></i></Link>
                     </div>
                     <div className="pro">
                         <img src="Images/dbms.png" alt="calci" />
@@ -166,7 +152,7 @@ export default function home() {
                             </div>
                             <h4>₹500</h4>
                         </div>
-                        <a href="cart.html"><i className="fal fa-shopping-cart cart"></i></a>
+                        <Link to="cart.html"><i className="fal fa-shopping-cart cart"></i></Link>
                     </div>
                     <div className="pro">
                         <img src="Images/coa2.jpg" />
@@ -182,45 +168,10 @@ export default function home() {
                             </div>
                             <h4>₹500</h4>
                         </div>
-                        <a href="cart.html"><i className="fal fa-shopping-cart cart"></i></a>
+                        <Link to="cart.html"><i className="fal fa-shopping-cart cart"></i></Link>
                     </div>
                 </div>
             </section>
-
-            <footer className="footer section-p1">
-                <div className="col">
-                    <p>
-                        <strong>Address: </strong>P.O. Box No.: 1908,
-                        <br />Bull Temple Road, Bangalore - 560 019
-                        <br />Karnataka, India.
-                    </p>
-                    <p>
-                        <strong>Phone:</strong> +91-80-26614357
-                    </p>
-                    <p>
-                        <strong>Hours:</strong> 10:00-17:00, Mon-Sat
-                    </p>
-                </div>
-                <div className="col">
-                    <h4>About</h4>
-                    <a href="about.html">About us</a>
-                    <a href="DeliveryInfo.html">Delivery Information</a>
-                    <a href="termsandconditions.html">Terms & Conditions</a>
-                    <a href="contact.html">Contact us</a>
-                </div>
-                <div className="col">
-                    <h4>My Account</h4>
-                    <a href="login.html">Login</a>
-                    <a href="cart.html">View Cart</a>
-                    <a href="contact.html">Help</a>
-                </div>
-                <div className="col">
-                    <h4>Feedback</h4>
-                    <a href="contact.html#rate">Rate Us</a>
-                    <a href="contact.html#rate">Send us an Email</a>
-                </div>
-            </footer>
-
         </div>
     )
 }
